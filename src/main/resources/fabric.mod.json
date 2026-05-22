@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "rentities",
+  "version": "${version}",
+  "name": "Rentities",
+  "description": "GPU-instanced entity rendering for NVIDIA GPUs using SSBO batching.",
+  "authors": [
+    "BalancingLight"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.balancinglight.rentities.Rentities"
+    ],
+    "sodium:config_api_user": [
+      "me.balancinglight.rentities.RentitiesConfigGui"
+    ]
+  },
+  "mixins": [
+    "rentities.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": ["1.21.11"],
+    "sodium": ["=0.8.6"]
+  }
+}

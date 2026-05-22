@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "me.balancinglight.rentities.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "rentities.refmap.json",
+  "client": [
+    "minecraft.MixinEntityRenderDispatcher",
+    "minecraft.MixinLevelRenderer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
